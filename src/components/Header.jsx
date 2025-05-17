@@ -15,13 +15,14 @@ export default function Header() {
     }, [isOpen]);
 
 
-  const generateLinks = (names) => {
+  const generateLinks = (names, closeOnClick = false) => {
     return (
        names.map((text) => (
             <Link
             key={text}
             to={`/${text === 'Home' ? '' : text.toLowerCase()}`}
             className="hover:scale-105 hover:text-KS_gold-001 text-KS_gold transition duration-200 ease-in-out"
+            onClick={closeOnClick ? () => setIsOpen(false) : undefined}
             >
             {text}
             </Link>
@@ -63,7 +64,7 @@ export default function Header() {
         style={{ transformOrigin: 'top', top: `${headerHeight}px` }}
       >
         <nav className="flex flex-col gap-4 text-center py-4 text-KS_gold">
-          {generateLinks(['Home', 'Event', 'Donate', 'About'])}
+          {generateLinks(['Home', 'Event', 'Donate', 'About'], true)}
         </nav>
       </div>
     </>
