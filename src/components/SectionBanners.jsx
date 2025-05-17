@@ -14,7 +14,9 @@ const borderColors = {
 const textColors = {
     black: 'text-black',
     white: 'text-white',
-    scarlet: 'text-KS_scarlet'
+    scarlet: 'text-KS_scarlet',
+    green: 'text-KS_green',
+    gold: 'text-KS_gold'
 }
 
 const opacityMap = {

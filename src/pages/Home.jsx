@@ -50,7 +50,7 @@ export default function Home() {
       </FullBanner>
 
       <section className="py-12 px-6 mx-auto relative z-4 -mt-4 -mb-4">
-        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+        <h2 className="text-KS_green max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-KS_green pb-2 w-full">
           About the Campaign
         </h2>
         <div className="pb-12 px-6 max-w-4xl mx-auto">
@@ -81,7 +81,7 @@ export default function Home() {
       </PartialBanner>
       
       <section className="py-12 px-6 mx-auto z-2 -mt-4">
-        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+        <h2 className="text-KS_green max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-KS_green pb-2 w-full">
           Ways to Give & Participate
         </h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
