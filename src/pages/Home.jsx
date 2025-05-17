@@ -72,7 +72,7 @@ export default function Home() {
         </h2>
         <div className="pb-6 px-6 max-w-4xl mx-auto">
           <p className="mb-4">
-            Our Gala will be held on <strong>Friday, November 14th, 2025</strong>. Join us for an evening of remembrance and giving with food, drink, two inspiring guest speakers, and a silent auction.
+            Our Gala will be held on <strong>Friday, November 14th, 2025</strong> at <strong>Bradbury Thompson Center</strong> on Washburn Campus. Join us for an evening of remembrance and giving with food, drink, two inspiring guest speakers, and a silent auction.
           </p>
           <p>
             This year's proceeds will support a transportation program at the Eastern Kansas VA to ensure veterans have access to the care they need.
