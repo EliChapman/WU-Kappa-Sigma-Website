@@ -1,10 +1,128 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import cashappQR from '../assets/QRs/cashapp.png'
+import donateQR from '../assets/QRs/donate.png'
+import ticketsQR from '../assets/QRs/tickets.png'
+import venmoQR from '../assets/QRs/venmo.png'
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl text-wu_blue2 font-bold">It works!</h1>
+    <div className="">
+      <section className="text-center py-12 bg-KS_scarlet text-white shadow-lg relative z-5 mb-4">
+        <h1 className="text-4xl md:text-5xl font-bold mb-1">
+          2025 Military Heroes Gala
+        </h1>
+        <h2 className="text-1xl md:text-1xl mb-6">
+          Kappa Sigma - Gamma-Nu (Washburn University)
+        </h2>
+        <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">
+          Honoring those who serve. Supporting those who've returned.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
+          <a href="/event" className="btn-primary underline hover:scale-105 transition duration-200 ease-in-out">RSVP for Gala</a>
+          <a href="/donate" className="btn-outline underline hover:scale-105 transition duration-200 ease-in-out">Make a Donation</a>
+        </div>
+      </section>
+
+      <section className="py-12 px-6 mx-auto shadow-xl relative z-4 -mt-4 mb-4">
+        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+          About the Campaign
+        </h2>
+        <div className="pb-12 px-6 max-w-4xl mx-auto">
+          <p className="mb-4">
+            The Military Heroes Campaign, created in 2007 by Kappa Sigma, is a nationwide initiative to support U.S. veterans.
+            All chapters of the Kappa Sigma Fraternity have dedicated their time and effort into helping with this initiative.
+          </p>
+          <p className="">
+            In November 2025, our chapter will host Military Heroes Month to support this cause.
+            We've built relationships with members from the Veterans of Foreign Wars (VFW), members of the American Legion, members of the Eastern Kansas VA, as well as the Goodyear Veterans Association.
+            We hope to make many more friends with other groups soon! We also plan to assist with those organizations in their efforts to recognize veterans throughout the year.
+          </p>
+        </div>
+      </section>
+
+      <section className="bg-KS_gold py-12 px-6 mx-auto shadow-lg relative z-3 -mt-4 mb-4">
+        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+          Military Heroes Gala
+        </h2>
+        <div className="pb-12 px-6 max-w-4xl mx-auto">
+          <p className="mb-4">
+            Our Gala will be held on <strong>Friday, November 14th, 2025</strong>. Join us for an evening of remembrance and giving with food, drink, two inspiring guest speakers, and a silent auction.
+          </p>
+          <p>
+            This year's proceeds will support a transportation program at the Eastern Kansas VA to ensure veterans have access to the care they need.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-12 px-6 mx-auto z-2 -mt-4">
+        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+          Military Heroes Gala
+        </h2>
+        <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div>
+            <div className="group relative max-w-min mx-auto">
+              <div className="transition-all duration-1000 ease-in-out group-hover:block fixed inset-0 bg-black group-hover:opacity-50 opacity-0 z-40 pointer-events-none"></div>
+              <a
+                href="https://legfi.com/app/fundraisers/mhgala2025/1543"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-24 mb-2 h-24 bg-contain" style={{ backgroundImage: `url(${donateQR})`}}>
+                  <img src={donateQR} alt="Donate QR" className="w-24 origin-center transition-all duration-500 ease-in-out group-hover:scale-300 scale-0 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none" />
+                </div>
+              </a>
+            </div>
+            <p>Donate via LegF</p>
+          </div>
+          <div>
+            <div className="group relative max-w-min mx-auto">
+              <div className="transition-all duration-1000 ease-in-out group-hover:block fixed inset-0 bg-black group-hover:opacity-50 opacity-0 z-40 pointer-events-none"></div>
+              <a
+                href="https://legfi.com/app/events/mhgala2025/2815"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-24 mb-2 h-24 bg-contain" style={{ backgroundImage: `url(${ticketsQR})`}}>
+                  <img src={ticketsQR} alt="Tickets QR" className="w-24 origin-center transition-all duration-500 ease-in-out group-hover:scale-300 scale-0 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none" />
+                </div>
+              </a>
+            </div>
+            <p>Event Tickets</p>
+          </div>
+          <div>
+            <div className="group relative max-w-min mx-auto">
+              <div className="transition-all duration-1000 ease-in-out group-hover:block fixed inset-0 bg-black group-hover:opacity-50 opacity-0 z-40 pointer-events-none"></div>
+              <a
+                href="https://cash.app/$Keegansharp27?qr=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-24 mb-2 h-24 bg-contain" style={{ backgroundImage: `url(${cashappQR})`}}>
+                  <img src={cashappQR} alt="Cashapp: $Keegansharp27" className="w-24 origin-center transition-all duration-500 ease-in-out group-hover:scale-300 scale-0 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none" />
+                </div>
+              </a>
+            </div>
+            <p>Donate via Cashapp</p>
+          </div>
+          <div>
+            <div className="group relative max-w-min mx-auto">
+              <div className="transition-all duration-1000 ease-in-out group-hover:block fixed inset-0 bg-black group-hover:opacity-50 opacity-0 z-40 pointer-events-none"></div>
+              <a
+                href="https://venmo.com/code?user_id=4200718885979512201&created=1743609125.588942"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-24 mb-2 h-24 bg-contain" style={{ backgroundImage: `url(${venmoQR})`}}>
+                  <img src={venmoQR} alt="Venmo: Keegan-Sharp2" className="w-24 origin-center transition-all duration-500 ease-in-out group-hover:scale-300 scale-0 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none" />
+                </div>
+              </a>
+            </div>
+            <p>Donate via Venmo</p>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

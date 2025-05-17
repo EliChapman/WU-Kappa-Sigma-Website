@@ -1,16 +1,45 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark_bg: #25252A;
-  --color-wu_blue1: #001529;
-  --color-wu_blue2: #003566;
-  --color-wu_blue3: #0E6BA8;
-  --color-wu_blue4: #47A6FF;
-  --color-wu_blue5: #A6E1FA
+  --font-display: "Verdana", "sans-serif";
+
+  /* KS Red */
+  --color-KS_scarlet: #bf0d3e;
+  --color-KS_scarlet-004: #f2cfd8;
+  --color-KS_scarlet-003: #e59eb2;
+  --color-KS_scarlet-002: #d96e8b;
+  --color-KS_scarlet-001: #cc3d65;
+  --color-KS_scarlet-100: #990a32;
+  --color-KS_scarlet-200: #730825;
+  --color-KS_scarlet-300: #4c0519;
+  --color-KS_scarlet-400: #26030c;
+
+  /* KS Green */
+  --color-KS_green: #215732;
+  --color-KS_green-004: #d3ddd6;
+  --color-KS_green-003: #a6bcad;
+  --color-KS_green-002: #7a9a84;
+  --color-KS_green-001: #4d795b;
+  --color-KS_green-100: #1a4628;
+  --color-KS_green-200: #14341e;
+  --color-KS_green-300: #0d2314;
+  --color-KS_green-400: #07110a;
+
+
+  /* KS Gold */
+  --color-KS_gold: #c99700;
+  --color-KS_gold-004: #f4eacc;
+  --color-KS_gold-003: #e9d599;
+  --color-KS_gold-002: #dfc166;
+  --color-KS_gold-001: #d4ac33;
+  --color-KS_gold-100: #a17900;
+  --color-KS_gold-200: #795b00;
+  --color-KS_gold-300: #503c00;
+  --color-KS_gold-400: #281e00;
 }
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -19,5 +48,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  @apply dark:bg-gray-700 dark:text-amber-50 text-gray-900
+  @apply dark:bg-neutral-800 dark:text-neutral-200 text-gray-900
+}
+
+html, body, div {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE 10+ */
+}
+
+html::-webkit-scrollbar, ::-webkit-scrollbar, div::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
 }
