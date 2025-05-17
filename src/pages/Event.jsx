@@ -4,7 +4,7 @@ import { FileText } from 'lucide-react'
 export default function Event() {
   return (
     <main id='event' className="">
-      <FullBanner color={'gold'} bannerOpacity={10}>
+      <FullBanner color={'gold'}>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Military Heroes Gala</h1>
           <p className="text-lg sm:text-2xl mb-6 max-w-xl mx-auto">
             Honoring those who serve. Supporting those who've returned.
