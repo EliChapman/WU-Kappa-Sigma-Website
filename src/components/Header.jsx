@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <>
-      <header ref={headerRef} className={`sticky top-0 z-50 bg-KS_green text-neutral-100 ${isOpen ? '' : 'shadow-md'} transition duration-200 ease-in-out`}>
+      <header id='header' ref={headerRef} className={`sticky top-0 z-50 bg-KS_green text-neutral-100 ${isOpen ? '' : 'shadow-md'} transition duration-200 ease-in-out`}>
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <Link to="/" className="hover:scale-105 flex items-center space-x-3 transition duration-200 ease-in-out">
             <img src="/ks-crest.png" alt="Kappa Sigma Logo" className="w-10 h-10 object-contain" />
@@ -56,6 +56,7 @@ export default function Header() {
 
       {/* Mobile Dropdown */}
       <div
+        id='dropdown'
         className={`md:hidden fixed left-0 w-full z-40 transition-all duration-300 ease-in-out origin-top transform ${
           isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
         } bg-neutral-200 dark:bg-neutral-800 shadow-2xl`}

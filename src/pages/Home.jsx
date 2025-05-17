@@ -8,21 +8,45 @@ import { FullBanner, PartialBanner } from "../components/SectionBanners";
 
 export default function Home() {
   return (
-    <div className="">
-      <FullBanner color={'scarlet'}>
+    <main id='home'>
+      {/* <FullBanner color={'green'}>
         <h1 className="text-4xl md:text-5xl font-bold mb-1">
             2025 Military Heroes Gala
           </h1>
           <h2 className="text-1xl md:text-1xl mb-6">
             Kappa Sigma - Gamma-Nu (Washburn University)
           </h2>
-          <p className="text-lg sm:text-2xl mb-6 max-w-xl mx-auto">
-            Honoring those who serve. Supporting those who've returned.
-          </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <a href="/event" className="btn-primary underline hover:scale-105 transition duration-200 ease-in-out">RSVP for Gala</a>
-            <a href="/donate" className="btn-outline underline hover:scale-105 transition duration-200 ease-in-out">Make a Donation</a>
+            <a href="/event" className="btn-primary underline hover:scale-105 hover:text-KS_gold transition duration-200 ease-in-out">RSVP for Gala</a>
+            <a href="/donate" className="btn-outline underline hover:scale-105 hover:text-KS_gold transition duration-200 ease-in-out">Make a Donation</a>
           </div>
+      </FullBanner> */}
+
+      <FullBanner color="green">
+        <div className="flex items-center justify-center gap-4 mb-6">
+          <span className="text-5xl md:text-[15rem] font-bold font-greek text-white">{'\u039a'}</span>
+          <img
+            src="/campaign-crest.png"
+            alt="Crest"
+            className="w-16 h-16 md:w-64 md:h-64 object-contain"
+          />
+          <span className="text-5xl md:text-[15rem] font-bold font-greek text-white">{'\u03A3'}</span>
+        </div>
+        <div className="flex flex-wrap justify-center gap-4 mt-6">
+          <a
+            href="/event"
+            className="inline-flex items-center justify-center px-6 py-3 font-semibold text-KS_gold border-2 border-KS_gold rounded-md bg-transparent hover:bg-KS_gold hover:border-KS_gold-002 hover:text-white transition-all duration-300 shadow-sm"
+          >
+            🎟 RSVP for Gala
+          </a>
+
+          <a
+            href="/donate"
+            className="inline-flex items-center justify-center px-6 py-3 font-semibold text-KS_gold border-2 border-KS_gold rounded-md bg-transparent hover:bg-KS_gold hover:border-KS_gold-002 hover:text-white transition-all duration-300 shadow-sm"
+          >
+            💛 Make a Donation
+          </a>
+        </div>
       </FullBanner>
 
       <section className="py-12 px-6 mx-auto relative z-4 -mt-4 -mb-4">
@@ -124,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-    </div>
+    </main>
   );
 }
 

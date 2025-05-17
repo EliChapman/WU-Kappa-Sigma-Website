@@ -4,8 +4,8 @@ import { FullBanner, PartialBanner } from "../components/SectionBanners";
 
 export default function About() {
   return (
-    <div className="">
-        <FullBanner color='gold' bannerOpacity={10}> 
+    <div id="about">
+        <FullBanner color='scarlet'> 
             <h1 className="text-4xl md:text-5xl font-bold">About the Military Heroes Campaign</h1>
             <p className="mt-4 text-lg md:text-2xl max-w-xl mx-auto">
                 A Kappa Sigma initiative dedicated to honoring and supporting veterans across North America.
@@ -56,7 +56,7 @@ export default function About() {
                 Our largest and most anticipated event each year is the <strong>Military Heroes Gala</strong> — a night of remembrance, celebration, and fundraising to directly support veterans in our community and beyond.
             </p>
 
-            <h3 className="text-xl font-semibold mt-6 mb-2">2024-2025 Contributions</h3>
+            <h3 className="text-KS_scarlet text-xl font-semibold mt-6 mb-2">2024-2025 Contributions</h3>
             <ul className="list-disc list-inside">
                 <li><strong>Volunteer Hours:</strong> 3,025</li>
                 <li><strong>Total Donations:</strong> $9,265.61</li>
