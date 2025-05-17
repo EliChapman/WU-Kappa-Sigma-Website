@@ -9,9 +9,28 @@ export default function Header() {
     const [headerHeight, setHeaderHeight] = useState(64); // default 64px
 
     useEffect(() => {
-    if (headerRef.current) {
+      if (headerRef.current) {
         setHeaderHeight(headerRef.current.offsetHeight);
-    }
+      }
+    }, [isOpen]);
+    
+    const dropdownRef = useRef(null);
+
+    useEffect(() => {
+      function handleClickOutside(event) {
+        if (
+          isOpen &&
+          dropdownRef.current &&
+          !dropdownRef.current.contains(event.target)
+        ) {
+          setIsOpen(false);
+        }
+      }
+
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
     }, [isOpen]);
 
 
@@ -57,6 +76,7 @@ export default function Header() {
 
       {/* Mobile Dropdown */}
       <div
+        ref={dropdownRef}
         id='dropdown'
         className={`md:hidden fixed left-0 w-full z-40 transition-all duration-300 ease-in-out origin-top transform ${
           isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0'
