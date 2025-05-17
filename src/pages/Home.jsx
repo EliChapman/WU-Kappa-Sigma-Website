@@ -4,27 +4,28 @@ import cashappQR from '../assets/QRs/cashapp.png'
 import donateQR from '../assets/QRs/donate.png'
 import ticketsQR from '../assets/QRs/tickets.png'
 import venmoQR from '../assets/QRs/venmo.png'
+import { FullBanner, PartialBanner } from "../components/SectionBanners";
 
 export default function Home() {
   return (
     <div className="">
-      <section className="text-center py-12 bg-KS_scarlet text-white shadow-lg relative z-5 mb-4">
+      <FullBanner color={'scarlet'}>
         <h1 className="text-4xl md:text-5xl font-bold mb-1">
-          2025 Military Heroes Gala
-        </h1>
-        <h2 className="text-1xl md:text-1xl mb-6">
-          Kappa Sigma - Gamma-Nu (Washburn University)
-        </h2>
-        <p className="text-lg md:text-xl mb-6 max-w-xl mx-auto">
-          Honoring those who serve. Supporting those who've returned.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <a href="/event" className="btn-primary underline hover:scale-105 transition duration-200 ease-in-out">RSVP for Gala</a>
-          <a href="/donate" className="btn-outline underline hover:scale-105 transition duration-200 ease-in-out">Make a Donation</a>
-        </div>
-      </section>
+            2025 Military Heroes Gala
+          </h1>
+          <h2 className="text-1xl md:text-1xl mb-6">
+            Kappa Sigma - Gamma-Nu (Washburn University)
+          </h2>
+          <p className="text-lg sm:text-2xl mb-6 max-w-xl mx-auto">
+            Honoring those who serve. Supporting those who've returned.
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="/event" className="btn-primary underline hover:scale-105 transition duration-200 ease-in-out">RSVP for Gala</a>
+            <a href="/donate" className="btn-outline underline hover:scale-105 transition duration-200 ease-in-out">Make a Donation</a>
+          </div>
+      </FullBanner>
 
-      <section className="py-12 px-6 mx-auto shadow-xl relative z-4 -mt-4 mb-4">
+      <section className="py-12 px-6 mx-auto relative z-4 -mt-4 -mb-4">
         <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
           About the Campaign
         </h2>
@@ -41,11 +42,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-KS_gold py-12 px-6 mx-auto shadow-lg relative z-3 -mt-4 mb-4">
-        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
+      <PartialBanner fillColor={"gold"} borderColor="gold" textColor="black">
+        <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold my-4 border-b-2 border-neutral-900 pb-2 w-full">
           Military Heroes Gala
         </h2>
-        <div className="pb-12 px-6 max-w-4xl mx-auto">
+        <div className="pb-6 px-6 max-w-4xl mx-auto">
           <p className="mb-4">
             Our Gala will be held on <strong>Friday, November 14th, 2025</strong>. Join us for an evening of remembrance and giving with food, drink, two inspiring guest speakers, and a silent auction.
           </p>
@@ -53,11 +54,11 @@ export default function Home() {
             This year's proceeds will support a transportation program at the Eastern Kansas VA to ensure veterans have access to the care they need.
           </p>
         </div>
-      </section>
-
+      </PartialBanner>
+      
       <section className="py-12 px-6 mx-auto z-2 -mt-4">
         <h2 className="max-w-4xl mx-auto text-center text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2 w-full">
-          Military Heroes Gala
+          Ways to Give & Participate
         </h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div>
