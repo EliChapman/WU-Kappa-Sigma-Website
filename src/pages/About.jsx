@@ -13,7 +13,7 @@ export default function About() {
         </FullBanner>
 
         <section className="pb-10 pt-6 px-6 max-w-4xl mx-auto">
-            <h2 className="text-KS_scarlet text-2xl font-bold mb-4 border-b-2 border-gray-300 pb-2">Campaign Overview</h2>
+            <h2 className="text-KS_scarlet text-2xl font-bold mb-4 border-b-2 border-KS_scarlet pb-2">Campaign Overview</h2>
             <p className="mb-4">
                 Launched in 2007, the Military Heroes Campaign is Kappa Sigma's national philanthropic initiative, solely run by undergraduate and alumni members. Its mission is clear:
                 <em>“Every veteran deserves a stable life and a community full of supporters.”</em>
@@ -49,8 +49,8 @@ export default function About() {
             </p>
         </PartialBanner>
 
-        <section className="pb-12 px-6 max-w-4xl mx-auto rounded-md">
-            <h2 className="text-2xl font-bold mb-4 border-b-2 border-gray-600 pb-2"></h2>
+        <section className="px-6 max-w-4xl mx-auto rounded-md">
+            <h2 className="text-2xl font-bold mb-4 border-b-2 border-KS_scarlet pb-2"></h2>
 
             <p className="mb-4">
                 Our largest and most anticipated event each year is the <strong>Military Heroes Gala</strong> — a night of remembrance, celebration, and fundraising to directly support veterans in our community and beyond.
@@ -68,6 +68,20 @@ export default function About() {
             </p>
         </section>
 
+        <section className="pb-12 px-6 max-w-4xl mx-auto space-y-4">
+            <h3 className="text-KS_scarlet text-xl font-semibold mt-6 mb-2">Our History</h3>
+            <p>
+                Kappa Sigma traces its heritage back to its founding in <strong>Bologna, Italy in 1400</strong>. The fraternity was officially established in the United States in <strong>1869 at the University of Virginia</strong>. Today, Kappa Sigma is the largest social fraternity in the world, with over <strong>20,000 undergraduate members</strong> and more than <strong>320 distinct chapters</strong>.
+            </p>
+
+            <p>
+                At Washburn University, the <strong>Gamma-Nu chapter</strong> is a smaller, close-knit group of around <strong>35 brothers</strong>, which strengthens the bond between members. Our brothers are active leaders on campus, consistently winning homecoming and maintaining roles in <em>Residential Living Staff, Student Ambassadors, SOCs, Aleshire Leadership Fellows</em>, and the <em>Washburn Student Government Association</em>.
+            </p>
+
+            <p>
+                Though we are currently a chapter <strong>without a house</strong>, this only pushes us to be more creative and intentional with how we connect. Some of our most meaningful memories come from volunteering together, taking spontaneous road trips to Kansas City, catching a late movie, or simply grabbing dinner together after chapter meetings.
+            </p>
+        </section>
 
     </div>
   );
