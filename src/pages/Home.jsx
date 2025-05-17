@@ -33,19 +33,19 @@ export default function Home() {
           <span className="text-5xl md:text-[15rem] font-bold font-greek text-white">{'\u03A3'}</span>
         </div>
         <div className="flex flex-wrap justify-center gap-4 mt-6">
-          <a
-            href="/event"
+          <Link
+            to="/event"
             className="inline-flex items-center justify-center px-6 py-3 font-semibold text-KS_gold border-2 border-KS_gold rounded-md bg-transparent hover:bg-KS_gold hover:border-KS_gold-002 hover:text-white transition-all duration-300 shadow-sm"
           >
             🎟 RSVP for Gala
-          </a>
+          </Link>
 
-          <a
-            href="/donate"
+          <Link
+            to="/donate"
             className="inline-flex items-center justify-center px-6 py-3 font-semibold text-KS_gold border-2 border-KS_gold rounded-md bg-transparent hover:bg-KS_gold hover:border-KS_gold-002 hover:text-white transition-all duration-300 shadow-sm"
           >
             💛 Make a Donation
-          </a>
+          </Link>
         </div>
       </FullBanner>
 
