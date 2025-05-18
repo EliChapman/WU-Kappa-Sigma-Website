@@ -5,6 +5,7 @@ import donateQR from '../assets/QRs/donate.png'
 import ticketsQR from '../assets/QRs/tickets.png'
 import venmoQR from '../assets/QRs/venmo.png'
 import { FullBanner, PartialBanner } from "../components/SectionBanners";
+import OmittedSection from "../components/OmittedSection";
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
           </p>
           <p className="">
             In November 2025, our chapter will host Military Heroes Month to support this cause.
-            We've built relationships with members from the Veterans of Foreign Wars (VFW), members of the American Legion, members of the Eastern Kansas VA, as well as the Goodyear Veterans Association.
+            We've built relationships with members from the Veterans of Foreign Wars (VFW), members of the American Legion,<OmittedSection> members of the Eastern Kansas VA,</OmittedSection> as well as the Goodyear Veterans Association.
             We hope to make many more friends with other groups soon! We also plan to assist with those organizations in their efforts to recognize veterans throughout the year.
           </p>
         </div>
@@ -74,9 +75,9 @@ export default function Home() {
           <p className="mb-4">
             Our Gala will be held on <strong>Friday, November 14th, 2025</strong> at <strong>Bradbury Thompson Center</strong> on Washburn Campus. Join us for an evening of remembrance and giving with food, drink, two inspiring guest speakers, and a silent auction.
           </p>
-          <p>
+          <OmittedSection><p>
             This year's proceeds will support a transportation program at the Eastern Kansas VA to ensure veterans have access to the care they need.
-          </p>
+          </p></OmittedSection>
         </div>
       </PartialBanner>
       
@@ -98,7 +99,7 @@ export default function Home() {
                 </div>
               </a>
             </div>
-            <p>Donate via LegF</p>
+            <p>Donate via LegFi</p>
           </div>
           <div>
             <div className="group relative max-w-min mx-auto">

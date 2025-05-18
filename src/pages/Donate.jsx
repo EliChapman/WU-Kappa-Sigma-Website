@@ -1,4 +1,5 @@
 import { FullBanner } from "../components/SectionBanners";
+import OmittedSection from "../components/OmittedSection"
 import cashappQR from '../assets/QRs/cashapp.png'
 import donateQR from '../assets/QRs/donate.png'
 import venmoQR from '../assets/QRs/venmo.png'
@@ -37,11 +38,11 @@ export default function Donate() {
           Our Gamma-Nu chapter proudly contributes through fundraising, partnerships, and volunteerism during <strong>Military Heroes Month</strong>.
         </p>
         <p>
-          We've built relationships with members of the <strong>Veterans of Foreign Wars</strong>, <strong>American Legion</strong>, <strong>Eastern Kansas VA</strong>, and more. Your donation helps these organizations recognize and support those who’ve served.
+          We've built relationships with members of the <strong>Veterans of Foreign Wars</strong>, <strong>American Legion</strong>,<OmittedSection> <strong>Eastern Kansas VA</strong>,</OmittedSection> and more. Your donation helps these organizations recognize and support those who’ve served.
         </p>
-        <p>
+        <OmittedSection><p>
           <strong>This year, all proceeds will benefit a transportation program</strong> for American veterans through the Eastern Kansas VA — ensuring they have access to the care and resources they deserve.
-        </p>
+        </p></OmittedSection>
       </section>
 
 
