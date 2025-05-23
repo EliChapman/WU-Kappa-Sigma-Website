@@ -33,20 +33,57 @@ The Military Heroes Gala is the Gamma-Nu chapter’s largest philanthropic event
 
 ## 🚀 Getting Started
 
+Follow these steps to set up the project locally and understand how it's organized:
+
+### 🔧 1. Clone and install
+
 ```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/EliChapman/wu-kappa-sigma-website.git
 cd wu-kappa-sigma-website
 
-# Install dependencies
+# Install all required dependencies
 npm install
+```
 
-# Run local dev server
+### 🔄 2. Run in development mode
+
+```bash
 npm run dev
+```
 
-# Build for production
+Starts the local dev server with hot reloading.  
+Visit: http://localhost:5173
+
+### 🏗 3. Build for production
+
+```bash
 npm run build
 ```
+
+Compiles the app to the `/dist` folder, ready for deployment (e.g. Vercel or Netlify).
+
+---
+
+## 📁 Project Structure & Components
+
+| Path                           | Description                                                                 |
+|--------------------------------|-----------------------------------------------------------------------------|
+| `src/pages/`                   | Top-level views: `Home`, `Event`, `Donate`, `About` — location of all page content    |
+| `src/components/Header.jsx`   | Sticky responsive navbar with mobile dropdown menu                          |
+| `src/components/Footer.jsx`   | Footer with links, social icons, and attribution                           |
+| `src/components/FullBanner.jsx` | Reusable hero/banner with optional background image or color overlay       |
+| `src/components/ScrollToTop.jsx` | Scrolls to top on route change (React Router fix)                         |
+| `src/assets/`                 | Logo, crest, QR codes, and other image assets                              |
+| `index.css`                   | Tailwind base + custom styles (fonts, variables, scrollbars, etc.)         |
+
+---
+
+## 🌐 Deployment
+
+This site is fully static and built for deployment on [Vercel](https://vercel.com/).  
+After `npm run build`, deploy the `/dist` folder or connect the GitHub repo to Vercel for CI/CD.
+
 
 ## 📜 License
 
