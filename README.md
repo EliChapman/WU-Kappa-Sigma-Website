@@ -12,7 +12,7 @@ A website for the 2025 Military Heroes Gala hosted by the Gamma-Nu chapter of Ka
 
 ## 📌 About the Gala
 
-The Military Heroes Gala is the Gamma-Nu chapter’s largest philanthropic event, supporting veteran-focused nonprofit initiatives. This year’s proceeds will benefit a transportation program within the Eastern Kansas Veterans Association.
+The Military Heroes Gala is the Gamma-Nu chapter’s largest philanthropic event, supporting veteran-focused nonprofit initiatives.
 
 ## ✨ Features
 
