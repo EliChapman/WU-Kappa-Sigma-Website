@@ -63,8 +63,6 @@ npm run build
 
 Compiles the app to the `/dist` folder, ready for deployment.
 
----
-
 ## 📁 Project Structure & Components
 
 | Path                           | Description                                                                 |
@@ -77,13 +75,32 @@ Compiles the app to the `/dist` folder, ready for deployment.
 | `src/assets/`                 | Logo, crest, QR codes, and other image assets                              |
 | `index.css`                   | Tailwind base + custom styles (fonts, variables, scrollbars, etc.)         |
 
----
-
 ## 🌐 Deployment
 
 This site is fully static and built for deployment on [Vercel](https://vercel.com/).  
 After `npm run build`, deploy the `/dist` folder or connect the GitHub repo to Vercel for CI/CD.
 
+# 🛠 How to Update the Website
+
+### Option 1: Online via GitHub (no coding required)
+1. Go to https://github.com/[your-org]/[your-repo]
+2. Click on any file (like `src/pages/Event.jsx`)
+3. Click the pencil ✏️ to edit
+4. Make your changes (e.g., update the event date or donor link)
+5. Scroll down → "Commit changes"
+6. Follow the steps to submit a pull request
+
+Vercel will automatically rebuild the site within 30–60 seconds.
+
+### Option 2: Local Edits (for developers)
+
+```bash
+git clone https://github.com/[your-org]/[your-repo].git
+cd your-repo
+npm install
+npm run dev
+```
+Then, edit components in `src/pages` or `src/components`
 
 ## 📜 License
 
