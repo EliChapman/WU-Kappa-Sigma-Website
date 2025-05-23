@@ -1,3 +1,4 @@
+import OmittedSection from "../components/OmittedSection";
 import { FullBanner } from "../components/SectionBanners";
 import { FileText } from 'lucide-react'
 
@@ -44,7 +45,7 @@ export default function Event() {
           We will have food and drink, two guest speakers with personal experience in the military or in organizations that support the military, and finally, a silent auction. The primary goal of our Gala is to first provide a nostalgic and memorable night for — and in honor of — those who have served our country.
         </p>
         <p>
-          Second, to auction off items donated by our sponsors to attendees and send <strong>100% of the proceeds</strong> to a veterans organization. This year, we plan to donate the funds to a program within the <strong>Eastern Kansas Veterans Association</strong> that is designed to provide <em>convenient and accessible transportation</em> for American veterans.
+          Second, to auction off items donated by our sponsors to attendees and send <strong>100% of the proceeds</strong> to a veterans organization. <OmittedSection> This year, we plan to donate the funds to a program within the <strong>Eastern Kansas Veterans Association</strong> that is designed to provide <em>convenient and accessible transportation</em> for American veterans.</OmittedSection>
         </p>
       </section>
 
