@@ -61,7 +61,7 @@ Visit: http://localhost:5173
 npm run build
 ```
 
-Compiles the app to the `/dist` folder, ready for deployment (e.g. Vercel or Netlify).
+Compiles the app to the `/dist` folder, ready for deployment.
 
 ---
 
