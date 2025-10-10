@@ -6,24 +6,15 @@ A website for the 2025 Military Heroes Gala hosted by the Gamma-Nu chapter of Ka
 <img src="./public/campaign-crest.png" alt="Military Heroes Campaign Crest" width="120" />
 
 
-## 🌐 Live Site
+## Live Site
 
 > [https://ks-military-heroes-gala.vercel.app/](https://ks-military-heroes-gala.vercel.app/)
 
-## 📌 About the Gala
+## About the Gala
 
 The Military Heroes Gala is the Gamma-Nu chapter’s largest philanthropic event, supporting veteran-focused nonprofit initiatives.
 
-## ✨ Features
-
-- 🔗 RSVP & donation links (LegFi, Venmo, CashApp)
-- 📅 Event schedule and guest info
-- 🛡 Info about the Military Heroes Campaign
-- 📜 Chapter history and mission
-- 📱 Mobile responsive design
-- 💅 Styled with Tailwind CSS and custom color theme
-
-## 🧱 Tech Stack
+## Tech Stack
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
@@ -31,11 +22,11 @@ The Military Heroes Gala is the Gamma-Nu chapter’s largest philanthropic event
 - [Lucide React Icons](https://lucide.dev/)
 - Hosted on [Vercel](https://vercel.com/)
 
-## 🚀 Getting Started
+## Getting Started
 
 Follow these steps to set up the project locally and understand how it's organized:
 
-### 🔧 1. Clone and install
+### 1. Clone and install
 
 ```bash
 # Clone the repository
@@ -46,7 +37,7 @@ cd wu-kappa-sigma-website
 npm install
 ```
 
-### 🔄 2. Run in development mode
+### 2. Run in development mode
 
 ```bash
 npm run dev
@@ -55,7 +46,7 @@ npm run dev
 Starts the local dev server with hot reloading.  
 Visit: http://localhost:5173
 
-### 🏗 3. Build for production
+### 3. Build for production
 
 ```bash
 npm run build
@@ -63,7 +54,7 @@ npm run build
 
 Compiles the app to the `/dist` folder, ready for deployment.
 
-## 📁 Project Structure & Components
+## Project Structure & Components
 
 | Path                           | Description                                                                 |
 |--------------------------------|-----------------------------------------------------------------------------|
@@ -75,12 +66,12 @@ Compiles the app to the `/dist` folder, ready for deployment.
 | `src/assets/`                 | Logo, crest, QR codes, and other image assets                              |
 | `index.css`                   | Tailwind base + custom styles (fonts, variables, scrollbars, etc.)         |
 
-## 🌐 Deployment
+## Deployment
 
 This site is fully static and built for deployment on [Vercel](https://vercel.com/).  
 After `npm run build`, deploy the `/dist` folder or connect the GitHub repo to Vercel for CI/CD.
 
-# 🛠 How to Update the Website
+# How to Update the Website
 
 ### Option 1: Online via GitHub (no coding required)
 1. Go to https://github.com/[your-org]/[your-repo]
@@ -92,7 +83,7 @@ After `npm run build`, deploy the `/dist` folder or connect the GitHub repo to V
 
 Vercel will automatically rebuild the site within 30–60 seconds.
 
-### Option 2: Local Edits (for developers)
+### Option 2: Local Edits
 
 ```bash
 git clone https://github.com/[your-org]/[your-repo].git
@@ -102,7 +93,7 @@ npm run dev
 ```
 Then, edit components in `src/pages` or `src/components`
 
-## 📜 License
+## License
 
 This website and its contents are the intellectual property of the Gamma-Nu chapter of Kappa Sigma Fraternity.
 
