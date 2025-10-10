@@ -34,17 +34,26 @@ export default function Header() {
     }, [isOpen]);
 
 
+  const slugify = (s) =>
+  s === 'Home'
+    ? ''
+    : s
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')        // spaces -> hyphens
+        .replace(/[^a-z0-9-]/g, ''); // remove non-alphanum/hyphen
+
   const generateLinks = (names, closeOnClick = false) => {
     return (
-       names.map((text) => (
-            <Link
+        names.map((text) => (
+          <Link
             key={text}
-            to={`/${text === 'Home' ? '' : text.toLowerCase()}`}
+            to={`/${slugify(text)}`}
             className="hover:scale-105 hover:text-KS_gold-001 text-KS_gold transition duration-200 ease-in-out"
             onClick={closeOnClick ? () => setIsOpen(false) : undefined}
             >
             {text}
-            </Link>
+          </Link>
         ))
     )
   }
@@ -60,7 +69,9 @@ export default function Header() {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex space-x-4">
-            {generateLinks(['Home', 'Event', 'Donate', 'About'])}
+
+            {/* Desktop Links (INSERT NEW LINKS HERE) */}
+            {generateLinks(['Home', 'Event', 'Donate', 'About', 'Sponsorship'])}
           </nav>
 
           {/* Mobile Hamburger */}
@@ -84,7 +95,9 @@ export default function Header() {
         style={{ transformOrigin: 'top', top: `${headerHeight}px` }}
       >
         <nav className="flex flex-col gap-4 text-center py-4 text-KS_gold">
-          {generateLinks(['Home', 'Event', 'Donate', 'About'], true)}
+
+          {/* Mobile Links (INSERT NEW LINKS HERE TOO) */}
+          {generateLinks(['Home', 'Event', 'Donate', 'About', 'Sponsorship'], true)}
         </nav>
       </div>
     </>
