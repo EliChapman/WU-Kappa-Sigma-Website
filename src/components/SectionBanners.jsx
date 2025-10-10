@@ -58,8 +58,8 @@ export function FullBanner( {children, color, bannerOpacity=0} ) {
 export function PartialBanner( {children, fillColor=null, textColor='', imgURL=null, borderColor='', bannerOpacity=0} ) {
 
     const backgroundClass = fillColor
-  ? bgColors[fillColor]
-  : 'bg-cover bg-center';
+    ? bgColors[fillColor]
+    : 'bg-cover bg-center';
 
     const imgStyle = imgURL ? { backgroundImage: `url(${imgURL})` } : {};
 

@@ -1,4 +1,4 @@
-import { FullBanner } from "../components/SectionBanners";
+import { FullBanner, PartialBanner } from "../components/SectionBanners";
 import OmittedSection from "../components/OmittedSection"
 import cashappQR from '../assets/QRs/cashapp.png'
 import donateQR from '../assets/QRs/donate.png'
@@ -15,8 +15,12 @@ export default function Donate() {
           </p>
       </FullBanner>
 
+      <section className="py-5 px-6 max-w-3xl mx-auto text-lg space-y-4">
+        {/* Separator */}
+      </section>
+
       {/* Final CTA */}
-      <section className="py-12 text-center px-6 bg-KS_green text-white">
+      <PartialBanner fillColor={'green'} textColor={'text-white'} borderColor={'black'}>
         <h2 className="text-2xl font-bold mb-4">Every dollar matters.</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           Whether you're giving $5 or $50, your donation goes directly to helping real veterans in our community and beyond.
@@ -29,7 +33,7 @@ export default function Donate() {
         >
           Donate Now
         </a>
-      </section>
+      </PartialBanner>
 
       <section className="py-10 px-6 max-w-3xl mx-auto text-lg space-y-4">
         <h2 className="text-KS_gold text-2xl font-bold mb-4 border-b-2 border-KS_gold-100 pb-2">Who You're Supporting</h2>
@@ -44,7 +48,6 @@ export default function Donate() {
           <strong>This year, all proceeds will benefit a transportation program</strong> for American veterans through the Eastern Kansas VA — ensuring they have access to the care and resources they deserve.
         </p></OmittedSection>
       </section>
-
 
       {/* Donation Info */}
       <section className="py-12 px-6 max-w-3xl mx-auto text-lg">

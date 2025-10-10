@@ -71,7 +71,7 @@ export default function Header() {
           <nav className="hidden md:flex space-x-4">
 
             {/* Desktop Links (INSERT NEW LINKS HERE) */}
-            {generateLinks(['Home', 'Event', 'Donate', 'About', 'Sponsorship'])}
+            {generateLinks(['Home', 'Event', 'Donate', 'Sponsorship', 'About'])}
           </nav>
 
           {/* Mobile Hamburger */}
@@ -97,7 +97,7 @@ export default function Header() {
         <nav className="flex flex-col gap-4 text-center py-4 text-KS_gold">
 
           {/* Mobile Links (INSERT NEW LINKS HERE TOO) */}
-          {generateLinks(['Home', 'Event', 'Donate', 'About', 'Sponsorship'], true)}
+          {generateLinks(['Home', 'Event', 'Donate', 'Sponsorship', 'About'], true)}
         </nav>
       </div>
     </>
