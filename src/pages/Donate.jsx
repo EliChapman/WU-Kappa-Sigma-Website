@@ -20,7 +20,7 @@ export default function Donate() {
       </section>
 
       {/* Final CTA */}
-      <PartialBanner fillColor={'green'} textColor={'text-white'} borderColor={'black'}>
+      <PartialBanner fillColor={'green'} textColor={'text-white'} borderColor={'none'}>
         <h2 className="text-2xl font-bold mb-4">Every dollar matters.</h2>
         <p className="mb-6 max-w-2xl mx-auto">
           Whether you're giving $5 or $50, your donation goes directly to helping real veterans in our community and beyond.

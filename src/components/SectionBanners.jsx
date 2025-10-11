@@ -55,11 +55,16 @@ export function FullBanner( {children, color, bannerOpacity=0} ) {
     )
 }
 
-export function PartialBanner( {children, fillColor=null, textColor='', imgURL=null, borderColor='', bannerOpacity=0} ) {
+export function PartialBanner( {children, fillColor=null, textColor='', imgURL=null, borderColor='', bannerOpacity=0, shadow=true} ) {
 
     const backgroundClass = fillColor
     ? bgColors[fillColor]
     : 'bg-cover bg-center';
+    const borderClass = borderColor == 'none' ? 'border-0' : 'border-2 ' + borderColors[borderColor];
+    const shadowClass = shadow ? 'shadow-xl' : '';
+
+
+    // If imgURL is provided, set it as background image
 
     const imgStyle = imgURL ? { backgroundImage: `url(${imgURL})` } : {};
 
@@ -70,9 +75,9 @@ export function PartialBanner( {children, fillColor=null, textColor='', imgURL=n
             mx-auto
             sm:max-w-screen md:max-w-9/10
             min-h-[25vh] md:min-h-[30vh]
-            shadow-xl
+            ${shadowClass}
             ${backgroundClass}
-            border-2 ${borderColors[borderColor]}
+            ${borderClass}
             flex items-center justify-center text-center px-4
             `}
             style={imgStyle}

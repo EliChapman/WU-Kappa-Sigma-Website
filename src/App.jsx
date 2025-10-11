@@ -18,8 +18,8 @@ export default function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/about" element={<About />} />
-        <Route path="/sponsorship" element={<Navigate to="/sponsorship-opportunities" replace />} />
-        <Route path="/sponsorship-opportunities" element={<SponsorshipOpportunities />} />
+        <Route path="/sponsorship" element={<SponsorshipOpportunities />} />
+        <Route path="/sponsorship-opportunities" element={<Navigate to="/sponsorship" replace />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />
